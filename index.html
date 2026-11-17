@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Language Practice Quiz | PSY2124</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="questions.js" defer></script>
+  <script src="quiz.js" defer></script>
+</head>
+<body>
+  <main>
+    <section id="start-screen" class="center-screen">
+      <button type="button" id="start">START</button>
+    </section>
+    <section id="question-screen" hidden>
+      <p id="progress" class="progress"></p>
+      <h1 id="prompt" tabindex="-1"></h1>
+      <p id="instructions" hidden>Select all that apply.</p>
+      <div id="options" role="group" aria-labelledby="prompt"></div>
+      <p id="feedback-status" role="status"></p>
+      <div class="actions">
+        <button type="button" id="check" hidden>Check answers</button>
+        <button type="button" id="next" hidden>Next question</button>
+      </div>
+    </section>
+    <section id="results-screen" class="center-screen" hidden>
+      <h1 id="results-heading" tabindex="-1">Quiz results</h1>
+      <p id="total"></p>
+      <p id="percentage"></p>
+      <button type="button" id="retry">TRY AGAIN</button>
+    </section>
+    <noscript>Enable JavaScript to take the quiz.</noscript>
+  </main>
+</body>
+</html>
